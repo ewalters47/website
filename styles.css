@@ -55,3 +55,10 @@ h2 {
   font-size: 16px;
   margin-right: 500px;
 }
+
+.vm-header {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-right: 500px;
+}
