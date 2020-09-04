@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ethan Walters</title>
+  </head>
+
+  <h1>My Homelab</h1>
+
+  <img src="images/homelab.jpg" alt="" width="800" height="600" />
+
+  <h2>Current Hardware</h2>
+  <ul>
+    <li>4 Dell Optiplex 7020 Towers</li>
+    <li>Cisco Catalyst 3750G 48 Port Layer 3 Switch</li>
+    <li>Cheap Linksys Router</li>
+  </ul>
+</html>
+
+<p class="about-homelab">
+  Currently I have 2 of the desktops repurposed as ESXi hypvervisors with
+  vCenter. The other desktop is running pfSense as my router/firewall and also
+  as an OpenVPN server. I have the Cisco 3750G doing my inter-vlan routing and
+  then have a routed port set up back to the pfSense box where I have static
+  routes setup so that certain VLANs can reach the internet. I have another repurposed desktop not shown that I'm planning to use for iSCSI storage with vSphere, I'm just waiting to buy NICs. I have around 10
+  virtual machines that are running various things including:
+  <ul>
+    <li>Active Directory Domain Services</li>
+    <li>Active Directory Certificate Services</li>
+    <li>AD is also doing internal DNS resolution and DHCP, forwarders set to Google DNS</li>
+    <li>Docker Hosts</li>
+    <li>Windows Admin Center</li>
+    <li>Wiki Server running Wiki.js (to keep track of all this stuff!)</li>
+    <li>Network Monitor - planning to use InfluxDB, Graphana</li>
+    <li>Nextcloud File Server - still setting up</li>
+
+  </ul>
+</p>
