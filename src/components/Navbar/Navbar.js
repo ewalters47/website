@@ -1,11 +1,12 @@
 import React from 'react';
 import { MenuItems } from "./MenuItems"
+import './Navbar.css'
 
-function Navbar() {
+export default function Navbar() {
 
     return (
         <nav className="NavbarItems">
-            <h1 className="navbar-logo">React</h1>
+            <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
             <div className="menu-icon">
 
             </div>
@@ -23,5 +24,3 @@ function Navbar() {
         </nav>
     );
 }
-
-export default Navbar
